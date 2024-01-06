@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 function Breadcrumb() {
     const segments = usePathname()
         .split("/")
-        .filter((segment) => !!segment);
+        .filter((segment) => !!segment); // create path segments
     return (
         <nav>
             <ol className="flex list-none space-x-2">

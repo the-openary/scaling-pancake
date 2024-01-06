@@ -22,7 +22,7 @@ const Header = () => {
         PostLoader("projects").then((posts) => {
             setProjects(posts);
         });
-    }, []);
+    }, []); // get all posts (server action)
     const [projects, setProjects] = useState<Post[]>([]);
 
     return (
