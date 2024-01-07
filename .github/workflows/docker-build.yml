@@ -3,8 +3,11 @@ name: Docker Build
 
 on:
   pull_request_review:
+    branches: [development, wip/**]
   pull_request:
+    branches: [development, wip/**]
   push:
+    branches: [development, wip/**]
 
 jobs:
   build:
